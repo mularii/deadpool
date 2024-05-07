@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body{
+    background: linear-gradient(to right, #ACE2E1, #008DDA, #ACE2E1);
+}
+form{
+    font-family: 'Poppins', sans-serif;
+    width: 950px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+hr{
+    size: 75px;
+    width: 550px;
+}
+
+th{
+    font-size: 2rem;
+}
+
+th .title{
+    justify-content: center;
+    position: absolute;
+}
+
+.container{
+    min-height: 100vh;
+    background: linear-gradient(to right, #AAC4FF, #D2DAFF);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2500px;
+}
+
+.text{
+    border: none;
+    outline: none;
+    background: rgba(226, 167, 238, 0.484);
+    padding: 1rem 1.5rem;
+    padding-left: calc(1rem * 3.5);
+    border-radius: 15px;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #41C9E2;
+}
+
+.btn:hover{
+    border: 2px solid red;
+    color: red;
+}
+
+
+.containerradio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    margin-top: 10px;
+}
+
+.containerradio{
+    font-weight: bold;
+    padding: 5px;
+    font-size: 24px;
+}
+  
+/* Create a custom radio button */
+.checkmark {
+top: 0;
+left: 0;
+height: 35px;
+width: 35px;
+background-color: #eee;
+border-radius: 50%;
+margin-top: 10px;
+}
+  
+/* On mouse-over, add a grey background color */
+.containerradio:hover input ~ .checkmark {
+background-color: #ccc;
+}
+  
+/* When the radio button is checked, add a blue background */
+.containerradio input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+  
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+  
+/* Show the indicator (dot/circle) when checked */
+.containerradio input:checked ~ .checkmark:after {
+display: block;
+}
+  
+/* Style the indicator (dot/circle) */
+.containerradio .checkmark:after {
+top: 9px;
+left: 9px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: white;
+}
+
+
+
+.select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+}
+.select {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-size: 16px;
+    color: whitesmoke;
+    width: 45px;
+    height: 25px;
+}
